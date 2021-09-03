@@ -1,0 +1,4 @@
+<LinkTo class="link" @route="posts"><h1>Posts</h1></LinkTo>
+{{#each @model as |one|}}
+<LinkTo class="link" @route="post" @model={{one.id}}><h3>{{one.name}}</h3></LinkTo>
+{{/each}}

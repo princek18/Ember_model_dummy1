@@ -1,0 +1,8 @@
+<LinkTo @route="/" class="link"><h1>Index</h1></LinkTo>
+{{#each @model as |post|}}
+<h3>{{post.title}}</h3>
+<p>{{post.body}}</p>
+<p>By: {{post.userId.name}}</p>
+<p>{{post.userId.phone}}</p>
+<p>{{post.userId.website}}</p>
+{{/each}}
